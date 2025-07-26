@@ -1,0 +1,93 @@
+/* Reset and layout */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #333;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* App container */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjust for nav height */
+  padding: 20px;
+}
+
+/* Common form container styling */
+.register-container,
+.login-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form button {
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #125ea5;
+}
+
+.navbar {
+  height: 70px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#company_logo {
+  height: 50px;
+  object-fit: contain;
+}

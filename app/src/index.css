@@ -1,0 +1,367 @@
+
+ .register-container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* prevents scroll if content fits */
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.register-container input,
+.register-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.register-container input:focus,
+.register-container select:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+  background-color: #1976d2;
+}
+
+/* Optional: Prevent body scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.login-container input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #43a047;
+}
+/* Dashboard.css */
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #f1f3f6;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Top navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+.company-logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Sidebar + Content wrapper */
+.main-section {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #e2e2e2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  padding: 30px;
+  background-color: #f1f3f6;
+}
+/* Common form container styling */
+.register-container,
+.login-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+form input,
+form select {
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form button {
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #125ea5;
+}
+
+.navbar {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px; /* 👈 This adds top padding */
+  background-color: #f8f8f8; /* optional */
+  height: 70px; /* optional: increase height if needed */
+
+}
+
+.company_logo {
+  height: 1000px;
+  object-fit: contain;
+}
+#btn_out{
+  color:white;
+  text-align: center;
+background-color: red;
+border:none;
+ margin-left: auto; 
+ padding: 6px 12px;     
+  font-size: 14px;      
+  border-radius: 6px;   
+
+}
+#btn_devices{
+  color:white;
+  text-align: center;
+background-color: red;
+border:none;
+ margin-left: auto; 
+  padding: 6px 12px;      /* Reduced padding */
+  font-size: 14px;         /* Slightly smaller text */
+  border-radius: 6px;   
+
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color:rgba(179, 25, 25, 0.763); /* similar to blue in the screenshot */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.device-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.device-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.device-table th,
+.device-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.device-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+
+.device-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.device-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.no-devices-cell {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #666;
+}
+#btnuser{
+   color:white;
+  text-align: center;
+background-color: red;
+border:none;
+ margin-left: auto; 
+  padding: 6px 12px;      /* Reduced padding */
+  font-size: 14px;         /* Slightly smaller text */
+  border-radius: 6px;  
+}
+#back_btn{
+   color:white;
+  text-align: center;
+background-color:greenyellow;
+border:none;
+ margin-left: auto; 
+  padding: 6px 12px;      /* Reduced padding */
+  font-size: 14px;         /* Slightly smaller text */
+  border-radius: 6px;  
+}
