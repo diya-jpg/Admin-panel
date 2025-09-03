@@ -1090,7 +1090,7 @@ const DeviceList = () => {
       [name]: value,
     }));
   };
-g
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
